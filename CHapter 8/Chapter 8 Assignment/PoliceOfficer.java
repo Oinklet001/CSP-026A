@@ -1,9 +1,10 @@
 public class PoliceOfficer{
-   
+       
     private String copName;
     private double badgeNum;
+    private double boughtTime;
     private double totalTime;
-    private double totalFine;
+    
 
     public PoliceOfficer(String copName, double badgeNum){
 
@@ -25,27 +26,23 @@ public class PoliceOfficer{
     public double getbadgeNum()
     {
 
-    	return this.badgeNum;
+        return this.badgeNum;
     }
     
 
     
-   //Finds if the car has overstayed parking
-    double total (ParkedCar carStuff, ParkingMeter parkingstuff){
-    	
-        totalTime =  carStuff.getHour() -  parkingstuff.getboughtTime();
-    	
-    	return this.totalTime;
+  //Finds if the car has overstayed parking
+    public double getCalculatedFine (ParkedCar carStuff, ParkingMeter parkingstuff){
+        
+        double totalFine;
+        
+        double totalIlligalM;
+        
+        totalIlligalM = carStuff.getHour() -  parkingstuff.getboughtTime();
+        
+        totalFine =  (totalIlligalM- 1)* 10 + Math.round((totalIlligalM + 99) / 100 ) * 25;
+        
+        return totalFine;
     }
     
- 
-
-   // Determines if the car overstaed parking
-    public double getCalculateFine() {
-
-        return this.totalFine = totalTime * 25;
-    }
-          
-
-       
 }
