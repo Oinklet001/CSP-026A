@@ -31,7 +31,7 @@ public class PoliceOfficer{
     
 
     
-  //Finds if the car has overstayed parking
+  //Finds if the fine of the car and determines if it overstayed.
     public double getCalculatedFine (ParkedCar carStuff, ParkingMeter parkingstuff){
         
         double totalFine;
@@ -42,7 +42,16 @@ public class PoliceOfficer{
         
         totalFine =  (totalIlligalM- 1)* 10 + Math.round((totalIlligalM + 99) / 100 ) * 25;
         
+        if (totalFine > 0){
+        
         return totalFine;
+        
+        }else{
+        
+        return 0;
+        }
     }
     
 }
+
+    
