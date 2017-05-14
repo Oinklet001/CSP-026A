@@ -1,59 +1,59 @@
 public class ParkedCar {
-	 private String make;
-	    private String model;
-	    private String color;
-	    private double licenseNum;
-	    private double hour;
+     private String make;
+        private String model;
+        private String color;
+        private double licenseNum;
+        private double hour;
 
 
-	    //constructor
-	    public ParkedCar(String make, String model, String color, double licenseNum, double hour){
+        //constructor
+        public ParkedCar(String make, String model, String color, double licenseNum, double hour){
 
-	    this.make = make;
-	    this.model = model;
-	    this.color = color;
-	    this.licenseNum = licenseNum;
-	    this.hour = hour;
+        this.make = make;
+        this.model = model;
+        this.color = color;
+        this.licenseNum = licenseNum;
+        this.hour = hour;
 
-	    }
-	    
+        }
+        
 
-	      public String getMake()
-	      {
+          public String getMake()
+          {
 
-	      return make;
-	      }
-	    
-	    
+          return make;
+          }
+        
+        
 
-	       public String getModel()
-	       {
+           public String getModel()
+           {
 
-	       return model;
+           return model;
 
-	       }
+           }
 
-	       public String getColor()
-	       {
+           public String getColor()
+           {
 
-	       return color;
+           return color;
 
-	       }
+           }
 
 
-	       public double getLicenseNum()
-	       {
+           public double getLicenseNum()
+           {
 
-	       return licenseNum;
+           return licenseNum;
 
-	       }
+           }
 
-	       public double getHour()
-	       {
+           public double getHour()
+           {
 
-	       return hour;
+           return hour;
 
-	       }
+           }
 
 
 }
